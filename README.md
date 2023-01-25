@@ -1,6 +1,6 @@
 # lanturtle-scripts
 
-![LAN Turtle](lan-turtle_2000x.webp "LAN Turtle Hardware")
+![LAN Turtle](lan-turtle.png "LAN Turtle Hardware")
 
 ## About LAN Turtle
 
