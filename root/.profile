@@ -14,6 +14,8 @@ pulldeploy() {
 }
 
 deploycleanup() {
+  cd
+  
   if [ -f /root/main.zip ]
   then
     rm /root/main.zip
