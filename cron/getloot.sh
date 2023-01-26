@@ -4,8 +4,8 @@
 # */5 * * * * * bash /root/scripts/getloot.sh
 
 ## vars
-loot="root/loot"
-looted="root/looted"
+loot="/root/loot"
+looted="/root/looted"
 
 
 ## functions
