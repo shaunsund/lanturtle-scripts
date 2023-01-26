@@ -2,6 +2,17 @@
 
 ![LAN Turtle](lan-turtle.png "LAN Turtle Hardware")
 
+## Install
+
+```
+opkg update
+opkg install unzip
+wget https://github.com/shaunsund/lanturtle-scripts/archive/refs/heads/main.zip
+unzip main.zip
+cd lanturtle-scripts-main
+./deploy
+```
+
 ## About LAN Turtle
 
 Offical LAN Turtle ressources:
