@@ -26,7 +26,7 @@ else
   echo "$STRING added!"
 fi
 
-STRING="0 */6 * * * bash /root/scriipts/getloot-6.sh"
+STRING="0 */6 * * * bash /root/scripts/getloot-6.sh"
 if [[ ! -z $(grep -F "$STRING" "$FILE") ]]
 then
   echo "$STRING found!"
