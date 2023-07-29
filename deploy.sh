@@ -17,7 +17,7 @@ cp -fv cron/* /root/scripts/
 # setup crons
 # getloot.sh
 FILE="/etc/crontabs/root"
-STRING="*/5 * * * * bash /root/scripts/getloot.sh"
+STRING="*/5 * * * * bash /root/scripts/5minute.sh"
 if [[ ! -z $(grep -F "$STRING" "$FILE") ]]
 then
   echo "$STRING found!"
