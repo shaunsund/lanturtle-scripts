@@ -7,6 +7,7 @@ pulldeploy() {
   then
     rm /root/main.zip
   fi
+  cd
   wget https://github.com/shaunsund/lanturtle-scripts/archive/refs/heads/main.zip
   unzip main.zip
   cd lanturtle-scripts-main
