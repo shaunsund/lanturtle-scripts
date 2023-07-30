@@ -25,7 +25,7 @@ local_default_gw=`ip route | grep default | grep 192.168.7.120 | awk '{print $3}
 
 ## functions
 exfil_keep() {
-  if [ $2="" ]
+  if [ -z "$2" ]
   then
     source="misc"
   else
