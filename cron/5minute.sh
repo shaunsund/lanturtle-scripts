@@ -37,7 +37,7 @@ exfil_keep() {
 }
 
 exfil() {
-  if [ "$2"=="" ]
+  if [ -z "$2" ]
   then
     lsource="misc"
   else
